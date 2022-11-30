@@ -6,13 +6,22 @@
 //2.2 - Altrimenti stampa L'utente non può accedere
 
 const email = ["sara.esp@gmail.com", "fra.lol@gmail.com", "michele.giordani@gmail.com", "lola.torre@gmail.com"]
+console.log(email)
 
-let text = parseInt(prompt("Inserisci la tua email"))
+const userEmail = prompt("Inserisci la tua email:");
 
-if(email[text] == undefined){
-    console.log('Email non trovata, l\'utente non può accedere')
+let found = false;
+for(let i = 0; i = email.length; i++){
+    const emailUser = email[i];
+
+    if(emailUser == userEmail){
+        found = true;
+    }
 }
-else{
-    console.log('Email trovata, l\'utente può accedere')
+
+if(found){ 
+   console.log('Email trovata, l\'utente può accedere')
+} else{
+    console.log('Email non trovata, l\'utente non può accedere')
 }
 
