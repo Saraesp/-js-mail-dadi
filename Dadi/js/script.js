@@ -12,7 +12,7 @@ let computer_num = Math.floor(Math.random() * 6) + 1;
 if(giocatore_num > computer_num){
     console.log(`Numero giocatore: ${giocatore_num}, numero computer: ${computer_num}. Il giocatore ha vinto!`)
 }
-else if(giocatore_num < computer_num){
+else if(computer_num > giocatore_num ){
     console.log(`Numero giocatore: ${giocatore_num}, numero computer: ${computer_num}. Il computer ha vinto!`)
 }
 else{
