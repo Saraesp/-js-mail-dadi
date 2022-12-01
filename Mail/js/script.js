@@ -11,17 +11,16 @@ console.log(email)
 const userEmail = prompt("Inserisci la tua email:");
 
 let found = false;
-for(let i = 0; i = email.length; i++){
-    const emailUser = email[i];
-
-    if(emailUser == userEmail){
+for(let i = 0; i < email.length; i++){
+    if(userEmail == email ){
         found = true;
     }
 }
 
 if(found){ 
    console.log('Email trovata, l\'utente può accedere')
-} else{
+} 
+else{
     console.log('Email non trovata, l\'utente non può accedere')
 }
 

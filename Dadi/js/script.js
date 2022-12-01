@@ -5,6 +5,17 @@
 //3 - Generare un numero random per il computer
 //4 - Chi ha il punteggio più alto ha vinto
 
-for(let i=1; i<=6; i++){
+let giocatore_num = Math.floor(Math.random() * 6) + 1;
+let computer_num = Math.floor(Math.random() * 6) + 1;
 
+
+if(giocatore_num > computer_num){
+    console.log(`Numero giocatore: ${giocatore_num}, numero computer: ${computer_num}. Il giocatore ha vinto!`)
 }
+else if(giocatore_num < computer_num){
+    console.log(`Numero giocatore: ${giocatore_num}, numero computer: ${computer_num}. Il computer ha vinto!`)
+}
+else{
+    console.log(`Numero giocatore: ${giocatore_num}, numero computer: ${computer_num}. Patta`)
+}
+
