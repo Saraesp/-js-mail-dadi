@@ -12,7 +12,7 @@ const userEmail = prompt("Inserisci la tua email:");
 
 let found = false;
 for(let i = 0; i < email.length; i++){
-    if(userEmail == email ){
+    if(userEmail == email[i]){
         found = true;
     }
 }
